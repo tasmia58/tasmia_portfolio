@@ -176,3 +176,23 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(11, 21, 58, 0.12);
 }
+/* About Page Background Fix */
+
+body {
+    background-color: #f5f7fb;
+}
+
+.about-section {
+    background-color: #e8edfa;
+    min-height: 80vh;
+    padding: 60px 10%;
+}
+
+.about-content {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(11, 21, 58, 0.12);
+}
