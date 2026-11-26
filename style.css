@@ -1,5 +1,8 @@
+ 
+/* =================================
+   BASIC SETTINGS
+================================= */
 
-/* Basic Settings */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +15,10 @@ body {
     color: #222;
 }
 
-/* Navigation Bar */
+/* =================================
+   NAVIGATION BAR
+================================= */
+
 header {
     background-color: #0B153A;
     padding: 20px 8%;
@@ -45,7 +51,10 @@ header {
     color: #8da9ff;
 }
 
-/* Home Section */
+/* =================================
+   HOME PAGE
+================================= */
+
 .home {
     min-height: 80vh;
     display: flex;
@@ -85,15 +94,21 @@ header {
     margin-bottom: 25px;
 }
 
-/* Buttons */
+/* =================================
+   BUTTONS
+================================= */
+
 .btn {
     display: inline-block;
     background-color: #0B153A;
     color: white;
     padding: 12px 22px;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .btn:hover {
@@ -106,28 +121,23 @@ header {
     border: 2px solid #0B153A;
 }
 
-/* Footer */
-footer {
-    background-color: #0B153A;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-/* About Page */
+/* =================================
+   ABOUT PAGE
+================================= */
 
 .about-section {
     min-height: 80vh;
     padding: 60px 10%;
-    background-color: #f5f7fb;
+    background-color: #e8edfa;
 }
 
 .about-content {
     max-width: 900px;
     margin: auto;
-    background-color: white;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(11, 21, 58, 0.12);
 }
 
 .about-content h1 {
@@ -156,43 +166,147 @@ footer {
 .about-content strong {
     color: #0B153A;
 }
-/* About Page Background Fix */
 
-body {
-    background-color: #f5f7fb;
-}
+/* =================================
+   CONTACT PAGE
+================================= */
 
-.about-section {
-    background-color: #e8edfa;
+.contact-section {
     min-height: 80vh;
     padding: 60px 10%;
+    background-color: #e8edfa;
 }
 
-.about-content {
-    background-color: #ffffff;
+.contact-content {
     max-width: 900px;
     margin: auto;
+    background-color: white;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(11, 21, 58, 0.12);
 }
-/* About Page Background Fix */
 
-body {
-    background-color: #f5f7fb;
+.contact-content h1 {
+    font-size: 40px;
+    color: #0B153A;
+    margin-bottom: 15px;
 }
 
-.about-section {
-    background-color: #e8edfa;
-    min-height: 80vh;
-    padding: 60px 10%;
+.contact-content h1 span {
+    color: #526fc5;
 }
 
-.about-content {
-    background-color: #ffffff;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(11, 21, 58, 0.12);
+.contact-content h3 {
+    color: #304f9e;
+    font-size: 22px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-content strong {
+    color: #0B153A;
+}
+
+.contact-content a {
+    color: #304f9e;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+
+#contactForm {
+    margin-top: 20px;
+}
+
+#contactForm p {
+    margin-bottom: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd3e5;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f9faff;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #304f9e;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #0B153A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        padding: 40px 6%;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 35px 5%;
+    }
+
+    .about-content,
+    .contact-content {
+        padding: 25px;
+    }
+
+    .home h1,
+    .about-content h1,
+    .contact-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content h3,
+    .contact-content h3 {
+        font-size: 20px;
+    }
 }
