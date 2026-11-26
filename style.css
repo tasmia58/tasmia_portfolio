@@ -113,9 +113,46 @@ footer {
     text-align: center;
     padding: 20px;
 }
- body {
-    background-color: lightblue;
+/* About Page */
+
+.about-section {
+    min-height: 80vh;
+    padding: 60px 10%;
+    background-color: #f5f7fb;
 }
-body {
-    background-color: yellowgreen !important;
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.about-content h1 {
+    font-size: 40px;
+    color: #0B153A;
+    margin-bottom: 20px;
+}
+
+.about-content h1 span {
+    color: #526fc5;
+}
+
+.about-content h3 {
+    color: #304f9e;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-content strong {
+    color: #0B153A;
 }
